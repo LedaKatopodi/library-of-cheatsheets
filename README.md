@@ -6,7 +6,7 @@ A library of various tools I use *pwetty often*. This repo doubles as an easy wa
 
 ## 📚 Cheatsheets
 
-In the frame of this repository, a **Cheatsheet** is a collection of commands that ensures an expected behavior. A single cheatsheet usually pertains a single tool, but can be extended to a collection of tools or a pipeline. Each cheatsheet contains at least one wrapper script and, possibly, additional auxiliary files or scripts. The wrapper file contains all primary and secondary code/commands needed to run each tool or pipeline and produce the desired effect; in effect, one only needs to run the wrapper script to get the expected output. 
+In the frame of this repository, a **Cheatsheet** is a collection of commands that ensures an expected behavior, e.g. the implementation of an analysis or the generation of a plot. A single cheatsheet usually pertains a single tool, but can be extended to a collection of tools or a pipeline. Each cheatsheet contains at least one wrapper script and, possibly, additional auxiliary files or scripts. The wrapper file contains all primary and secondary code/commands needed to run each tool or pipeline and produce the desired effect; in effect, one only needs to run the wrapper script to get the expected output. 
 
 Each cheatsheet follows the naming conventions below, to ensure better organization of this repo:
 
