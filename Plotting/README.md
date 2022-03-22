@@ -2,7 +2,7 @@
 <details>
 <summary>🍣 ggsashimi</summary>
 
-	## 🍣 ggsashimi
+## 🍣 ggsashimi
 
 [ggsashimi](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1006360) is a plotting tool developped by the Guigo lab for the visualization of alternative splicing events. The installation procedure is well documented on their [GitHub page](https://github.com/guigolab/ggsashimi), along with the dependencies. For this cheatsheet the following modules were imported:
 
