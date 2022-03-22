@@ -1,7 +1,7 @@
 # Immuno-informatics Cheatsheets
 
 <details>
-<summary>👓 TRUST4<\summary>
+<summary>👓 TRUST4 </summary>
   
 ## 👓 TRUST4
 
