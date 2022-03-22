@@ -1,6 +1,6 @@
 # library-of-cheatsheets
 
-A library of various tools I often use. This repo doubles as an easy way to find the code I need without going through all my scripts.
+A library of various tools I use *pwetty often*. This repo doubles as an easy way to find the code I need without going through all my scripts.
 
 ![Library](/aes/library.jpg)
 
