@@ -1,6 +1,6 @@
 # Plotting Cheatsheets
 <details>
-<summary><a>## 🍣 ggsashimi</a></summary>
+<summary>🍣 ggsashimi</summary>
 
 ## 🍣 ggsashimi
 
