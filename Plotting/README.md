@@ -1,6 +1,6 @@
 # Plotting Cheatsheets
 
-## Tool: ggsashimi
+## 🍣 ggsashimi
 
 [ggsashimi](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1006360) is a plotting tool developped by the Guigo lab for the visualization of alternative splicing events. The installation procedure is well documented on their [GitHub page](https://github.com/guigolab/ggsashimi), along with the dependencies. For this cheatsheet the following modules were imported:
 
@@ -12,7 +12,7 @@
 
 The ggsashimi cheatsheet comes with a single wrapper script, [ggsashimi.run.sh](./src/ggsashimi.run.sh).
 
-### Arguments & Input Files
+### 📔 Arguments & Input Files
 
 The ggsashimi cheatsheet requires 2 arguments:
 
@@ -27,7 +27,7 @@ The **input file** is a 3-column tsv file containing the following information:
 
 An example input file is provided by the ggsashimi developers, [here](https://github.com/guigolab/ggsashimi/blob/master/examples/input_bams.tsv).
 
-### Running the Cheatsheet
+### 👟 Running the Cheatsheet
 
 The ggsashimi cheatsheet was built under the following additional constraints/assumptions:
 
@@ -40,6 +40,6 @@ That being said, the example provided in this cheatsheet can be run as:
 ```
 sh ggsashimi.run.sh /working/directory /path/to/gtf/annotation/gtf.gtf
 ```
-(!) It should also be noted that running `export GGSASHIMI_DEBUG=yes` (included in the ggsashimi cheatsheet, line 4) has been found to be crucial for the tool's proper behaviour.
+⚠️ It should also be noted that running `export GGSASHIMI_DEBUG=yes` (included in the ggsashimi cheatsheet, line 4) has been found to be crucial for the tool's proper behaviour.
 
 In the frame of this cheatsheet, output files are generated and saved under the newly created SashimiPlots folder, inside the working directory.
