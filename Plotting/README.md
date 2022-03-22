@@ -1,6 +1,6 @@
 # Plotting Cheatsheets
-
-## 🍣 ggsashimi
+<details>
+<summary>## 🍣 ggsashimi</summary>
 
 [ggsashimi](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1006360) is a plotting tool developped by the Guigo lab for the visualization of alternative splicing events. The installation procedure is well documented on their [GitHub page](https://github.com/guigolab/ggsashimi), along with the dependencies. For this cheatsheet the following modules were imported:
 
@@ -43,3 +43,4 @@ sh ggsashimi.run.sh /working/directory /path/to/gtf/annotation/gtf.gtf
 ⚠️ It should also be noted that running `export GGSASHIMI_DEBUG=yes` (included in the ggsashimi cheatsheet, line 4) has been found to be crucial for the tool's proper behaviour.
 
 In the frame of this cheatsheet, output files are generated and saved under the newly created SashimiPlots folder, inside the working directory.
+</details>
