@@ -23,5 +23,5 @@ echo -e "#3399FF\n#FF661A" > palette.tsv
 -g $gtf --out-prefix "PIANP_12-6693791-6700815_Sashimi" \
 -M 10 -C 3 -O 3 --alpha 0.25 --base-size 20 --ann-height 1.5 --height 3 --width 10 --shrink \
 --palette palette.tsv --fix-y-scale --out-format png
-## Generatinf Plot
+## Generating Plot
 Rscript R_script
