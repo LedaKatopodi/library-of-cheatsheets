@@ -1,15 +1,20 @@
 # Auxiliary Code for Generating TRUST4 Custom Annotation
 
 ## Get Arguments
-while getopts o:g:f:l: flag
+while getopts o:g:f: flag
 do
 	case "${flag}" in
 		o) organism=${OPTARG};;
 		g) gtf=${OPTARG};;
 		f) fasta=${OPTARG};;
-		l) vdjclist=${OPTARG};;
 	esac
 done
+
+if [ -z "$organism" ]; then echo "Error: -o argument required."; exit; fi
+if [ -z "$gtf" ]; then echo "Error: -g argument required."; exit; fi
+if [ -z "$fasta" ]; then echo "Error: -f argument required."; exit; fi
+
+# -- -- #
 
 annDir=~/TRUST4/custom_${organism}
 mkdir $annDir

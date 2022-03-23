@@ -14,6 +14,13 @@ do
 	esac
 done
 
+if [ -z "$wkDir" ]; then echo "Error: -w argument required."; exit; fi
+if [ -z "$sample" ]; then echo "Error: -s argument required."; exit; fi
+if [ -z "$organism" ]; then echo "Error: -o argument required."; exit; fi
+if [ -z "$bam" ]; then echo "Error: -b argument required."; exit; fi
+
+# -- -- #
+
 ## Set Variables depending on the Organism
 if [ $custom == true ]; then
 
@@ -61,7 +68,7 @@ fi
 
 
 ## Run TRUST4
-cores=${nproc}
+cores=$(nproc)
 mkdir $wkDir/TRUST4
 
 echo $ffile
