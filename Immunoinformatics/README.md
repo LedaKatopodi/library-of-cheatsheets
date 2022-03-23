@@ -35,7 +35,7 @@ For more details on the arguments and assumptions of this cheatsheet see [below]
 
 * `-d $wkDir` (required) : The working directory . The cheatsheet will save the output files in a newly created folder inside the working directory.
 * `-s $sample` (required): A sample ID, used for naming the output files. The use of a sample ID is suggested when more than 1 samples are analyzed.
-* `-c $custom` (binary, optional): A `true`/`false` argument that specifies whether custom annotation should be generated from input annotation files (see below). If the argument is not supplied or is `false` the cheatsheet decides which annotation files to use, depending on the supplied organism/s[ecies argument (see below).
+* `-c $custom` (binary, optional): A `true`/`false` argument that specifies whether custom annotation should be generated from input annotation files (see arguments `-g` and `-f`). If the argument is not supplied or is `false` the cheatsheet decides which annotation files to use, depending on the supplied organism/species argument (see below, in additional notes).
 * `-o $organism` (required): A string argument supplying the organism/ species name for selection of proper annotation, or creation of custom annotation. A list of possible values for this argument is supplied [here](http://www.imgt.org//download/V-QUEST/IMGT_V-QUEST_reference_directory/), which reflects the availability of reference files that TRUST4 can work with.
 * `-g $gtf` (optional): The path to the GTF for the species of interest that will be used for the creation of the custom annotation.
 * `-f $fasta` (optional): The path to the FASTA file for the species of interest that will be used in the creation of the custom annotation.
