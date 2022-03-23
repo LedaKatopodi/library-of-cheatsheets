@@ -11,7 +11,7 @@ The TRUST4 cheatsheet comes with one wrapper script, [TRUST4.run.sh](./src/TRUST
 
 ### 👟 Running the Cheatsheet
 
-The TRUST4 cheatsheet assumes that the installation has taken place in the home folder; thus that the `~/TRUST4/` directory exists and includes all files provided when cloning the [TRUST4 GitHub repo](https://github.com/liulab-dfci/TRUST4).
+The TRUST4 cheatsheet assumes that the installation of TRUST4 has taken place in the home folder; thus that the `~/TRUST4/` directory exists and includes all files provided when cloning the [TRUST4 GitHub repo](https://github.com/liulab-dfci/TRUST4).
     
 The example provided in this cheatsheet can be run as:
 
