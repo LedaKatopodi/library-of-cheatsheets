@@ -61,7 +61,7 @@ The auxiliary script can be run as:
     
 ```
 sh TRUST4.aux_src.CustomAnnotation.sh -o Homo_sapiens
-	    	                          -g /path/to/gtf/annotation/gtf.gtf
+	    	                      -g /path/to/gtf/annotation/gtf.gtf
                                       -f /path/to/fas/annotation/fasta.fa
 ```
 <details>
