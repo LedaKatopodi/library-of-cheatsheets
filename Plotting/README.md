@@ -14,7 +14,7 @@
 
 The ggsashimi cheatsheet comes with a single wrapper script, [ggsashimi.run.sh](./src/ggsashimi.run.sh).
 
-	### 👟 Running the Cheatsheet
+### 👟 Running the Cheatsheet
 
 The ggsashimi cheatsheet was built under the following constraints/assumptions:
 
@@ -26,15 +26,15 @@ That being said, the example provided in this cheatsheet can be run as:
 
 ```
 sh ggsashimi.run.sh -d /working/directory
-		    -g /path/to/gtf/annotation/gtf.gtf
+	    	    -g /path/to/gtf/annotation/gtf.gtf
 ```
 
-	See [below](#real-cool-heading) for more information regarding the arguments.
-	
+See [below](#-arguments--input-files) for more information regarding the arguments.
+
 ⚠️ It should also be noted that running `export GGSASHIMI_DEBUG=yes` (included in the ggsashimi cheatsheet, line 4) has been found to be crucial for the tool's proper behaviour.
 
 In the frame of this cheatsheet, output files are generated and saved under the newly created SashimiPlots folder, inside the working directory.
-	
+
 ### 📔 Arguments & Input Files
 
 The ggsashimi cheatsheet requires 2 arguments:
@@ -49,6 +49,5 @@ The **input file** is a 3-column tsv file containing the following information:
 3. Group.
 
 An example input file is provided by the ggsashimi developers, [here](https://github.com/guigolab/ggsashimi/blob/master/examples/input_bams.tsv).
-
 
 </details>
