@@ -20,7 +20,7 @@ sh TRUST4.run.sh -d /working/directory
                  -s "CheatSample"
                  -c true
                  -o Homo_sapiens
-	    	     -g /path/to/gtf/annotation/gtf.gtf
+	    	 -g /path/to/gtf/annotation/gtf.gtf
                  -f /path/to/fas/annotation/fasta.fa
                  -b /path/to/input/bam.bam
 ```
