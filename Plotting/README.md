@@ -40,7 +40,8 @@ The ggsashimi cheatsheet was built under the following additional constraints/as
 That being said, the example provided in this cheatsheet can be run as:
 
 ```
-sh ggsashimi.run.sh /working/directory /path/to/gtf/annotation/gtf.gtf
+sh ggsashimi.run.sh -d /working/directory
+		    -g /path/to/gtf/annotation/gtf.gtf
 ```
 ⚠️ It should also be noted that running `export GGSASHIMI_DEBUG=yes` (included in the ggsashimi cheatsheet, line 4) has been found to be crucial for the tool's proper behaviour.
 
