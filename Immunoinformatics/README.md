@@ -44,7 +44,7 @@ For more details on the arguments and assumptions of this cheatsheet see [below]
 A few additional things should be noted:
 
 1. When specifying `-c false -o Homo_sapiens` or `-c false -o Mus_musculus`, the cheatsheet will use the existing annotation that is supplied by the TRUST4 developers.
-2. If the organism is neither human nor mouse, the cheatsheet will try to create the custom annotation from the supplied GTF and FASTA. In other words, for species other than numan and mouse, the GTF and FASTA files are **required** for the creation of the needed annotation; else the script will exit with error.
+2. If the organism is neither human nor mouse, the cheatsheet will try to create the custom annotation from the supplied GTF and FASTA. In other words, for species other than human and mouse, the GTF and FASTA files are **required** for the creation of the needed annotation; else the script will exit with error.
 3. If a custom annotation exists for the specified organism, the cheatsheet will skip the creation of the custom annotation anew. In order to update the custom annotation, one can delete the existing custom annotation directory (see below) or run the auxiliary script for custom annotation (see below, again).
 
 #### 🍬 Auxiliary Scripts
