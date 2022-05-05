@@ -1,9 +1,13 @@
-# Plotting Cheatsheets
+# Tool Cheatsheets
+
+A tool-centric approach on cheatsheets, i.e. *How to Run a Specific Tool 101*.
+
+## Plotting Tools
 
 <details>
 <summary>🍣 ggsashimi</summary>
 
-## 🍣 ggsashimi
+### 🍣 ggsashimi
 
 [ggsashimi](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1006360) is a plotting tool developped by the Guigo lab for the visualization of alternative splicing events. The installation procedure is well documented on their [GitHub page](https://github.com/guigolab/ggsashimi), along with the dependencies. For this cheatsheet the following modules were imported:
 
@@ -53,10 +57,12 @@ An example input file is provided by the ggsashimi developers, [here](https://gi
 
 </details>
 
+## Immunoinformatics Tools
+
 <details>
 <summary>👓 TRUST4</summary>
 
-## 👓 TRUST4
+### 👓 TRUST4
 
 [TRUST4](https://doi.org/10.1038/s41592-021-01142-2) is a computational tool that analyzes TCR and BCR sequences using unselected RNA sequencing data, profiled from **solid tissues**. The installation procedure is straightforward, and it is documented on the correspoding [GitHub repository](https://github.com/liulab-dfci/TRUST4).
 
