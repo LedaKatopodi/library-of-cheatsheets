@@ -24,9 +24,9 @@ The repository is split in sub-folders based on the "end-goal" of each cheatshee
 
 ```
 .
-├── Immunoinformatics
+├── Pipelines
 │   └── src
-├── Plotting
+├── Tools
 │   ├── aux
 │   └── src
 └── aes
