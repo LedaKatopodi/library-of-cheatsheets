@@ -19,7 +19,7 @@ A tool-centric approach on cheatsheets, i.e. *How to Run a Specific Tool 101*.
 
 The ggsashimi cheatsheet comes with a single wrapper script, [ggsashimi.run.sh](./src/ggsashimi.run.sh).
 
-### 👟 Running the Cheatsheet
+#### 👟 Running the Cheatsheet
 
 The ggsashimi cheatsheet was built under the following constraints/assumptions:
 
@@ -41,7 +41,7 @@ See [below](#-arguments--input-files) for more information regarding the argumen
 
 In the frame of this cheatsheet, output files are generated and saved under the newly created SashimiPlots folder, inside the working directory.
 
-### 📔 Arguments & Input Files
+#### 📔 Arguments & Input Files
 
 The ggsashimi cheatsheet requires 2 arguments:
 
@@ -73,7 +73,7 @@ Further specifications regarding the resulting plot, e.g. height or output forma
 
 The TRUST4 cheatsheet comes with one wrapper script, [TRUST4.run.sh](./src/TRUST4.run.sh) and an additional auxiliary script, [TRUST4.aux_src.CustomAnnotation.sh](./src/TRUST4.aux_src.CustomAnnotation.sh) that creates custom annotation from GTF anf FASTA files specified by the user.
 
-### 👟 Running the Cheatsheet
+#### 👟 Running the Cheatsheet
 
 The TRUST4 cheatsheet assumes that the installation of TRUST4 has taken place in the home folder; thus that the `~/TRUST4/` directory exists and includes all files provided when cloning the [TRUST4 GitHub repo](https://github.com/liulab-dfci/TRUST4).
     
@@ -91,9 +91,9 @@ sh TRUST4.run.sh -d /working/directory
     
 For more details on the arguments and assumptions of this cheatsheet see [below](-arguments--input-files).
 
-### 📔 Arguments & Input Files
+#### 📔 Arguments & Input Files
 
-#### 🍨 Main script
+##### 🍨 Main script
 
 7 arguments can be supplied to the TRUST4 main script, but not all of them are required. In more detail:
 
@@ -111,7 +111,7 @@ A few additional things should be noted:
 2. If the organism is neither human nor mouse, the cheatsheet will try to create the custom annotation from the supplied GTF and FASTA. In other words, for species other than human and mouse, the GTF and FASTA files are **required** for the creation of the needed annotation; else the script will exit with error.
 3. If a custom annotation exists for the specified organism, the cheatsheet will skip the creation of the custom annotation anew. In order to update the custom annotation, one can delete the existing custom annotation directory (see below) or run the auxiliary script for custom annotation (see below, again).(Note to self: can include an overwrite argument.)
 
-#### 🍬 Auxiliary Scripts
+##### 🍬 Auxiliary Scripts
 
 The auxiliary script, [TRUST4.aux_src.CustomAnnotation.sh](./src/TRUST4.aux_src.CustomAnnotation.sh), creates custom annotation from the specified GTF and FASTA files. The output is saved under a newly created directory, located inside the TRUST4 directory (assuming installation at `~/TRUST4/`), named `custom_{Organism}`, based on the species name provided. This can be altered at line 19.
 
