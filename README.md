@@ -1,12 +1,14 @@
 # library-of-cheatsheets
 
-A library of various tools I use *pwetty often*. This repo doubles as an easy way to find the code I need without going through all my scripts.
+A library of example code -aka **cheatsheets**- for tools I use or analyses I carry out pretty often. This repo doubles as an easy way to find the code I need without going through all my scripts.
 
 ![Library](/aes/library.jpg)
 
 ## 📚 Cheatsheets
 
-In the frame of this repository, a **Cheatsheet** is a collection of commands that runs a specific tool or pipeline from start to end, ensuring an expected behavior. For example, a cheatsheet can include the necessary code for the implementation of an analysis or the generation of a plot. A single cheatsheet usually pertains a specific tool, but can be extended to a collection of tools or a pipeline. For each tool, at least one main script and, possibly, additional auxiliary files or scripts are supplied. The main script contains all the code/commands needed to run each tool or pipeline, and to produce the desired result; in effect, one only needs to run the main script to get the expected output.
+In the frame of this repository, a **Cheatsheet** is a collection of commands that runs a specific tool or pipeline from start to end, ensuring an expected behavior. For example, a cheatsheet can include the necessary code for the implementation of an analysis or the generation of a plot. A single cheatsheet usually pertains a specific tool (see `Tools` subfolder), but can be extended to a collection of tools or a pipeline (see `Pipelines` subfolder). 
+
+For each tool, at least one main script and, possibly, additional auxiliary files or scripts are supplied. The main script contains all the code/commands needed to run each tool or pipeline, and to produce the desired result; in effect, one only needs to run the main script to get the expected output.
 
 Each cheatsheet follows the naming conventions below, to ensure better organization of this repo:
 
