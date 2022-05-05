@@ -24,7 +24,6 @@ The ggsashimi cheatsheet comes with a single wrapper script, [ggsashimi.run.sh](
 The ggsashimi cheatsheet was built under the following constraints/assumptions:
 
 * The ggsashimi source code is located in the home folder, under `~/ggsashimi.py`. The user can adjust accordingly (line 22).
-* For the purposes of this cheatsheet demonstration, the wrapper script contains example code for plotting the splicing events on the PIANP gene (hg38). The coordinates for the example gene are specified by the `-c` argument when running ggsashimi; the output name is specified by the `--out-prefix` argument. The user can adjust accordingly (lines 22 and 23, respectively).
 * For the purposes of this cheatsheet demonstration, the wrapper script assumes 2 groups, thus generates a palette of 2 colors. The user can adjust accordingly (line 20). (Note to self: although automatic generation of the color palette goes beyond the scope of this cheatsheet, it would be a nice automation.)
 
 That being said, the example provided in this cheatsheet can be run as:
@@ -32,11 +31,13 @@ That being said, the example provided in this cheatsheet can be run as:
 ```
 sh ggsashimi.run.sh -d /working/directory
 	    	    -g /path/to/gtf/annotation/gtf.gtf
+		    -c "12:6693791-6700815"
+		    -o "PIANP_12-6693791-6700815_Sashimi"
 ```
 
 See [below](#-arguments--input-files) for more information regarding the arguments.
 
-⚠️ It should also be noted that running `export GGSASHIMI_DEBUG=yes` (included in the ggsashimi cheatsheet, line 4) has been found to be crucial for the tool's proper behaviour.
+⚠️ Running `export GGSASHIMI_DEBUG=yes` (included in the ggsashimi cheatsheet, line 4) has been found to be crucial for the tool's proper behaviour.
 
 In the frame of this cheatsheet, output files are generated and saved under the newly created SashimiPlots folder, inside the working directory.
 
@@ -46,6 +47,8 @@ The ggsashimi cheatsheet requires 2 arguments:
 
 1. `-d $wkDir`: The working directory. The cheatsheet script assumes that the *input file* is located in the working folder, and that it is named `ggsashimi_inputBams.tsv`
 2. `-g $gtf`: Path to the GTF file used for the annotation.
+3. `-c $coord`: Coordinates for the region of interest to be plotted. The value should follow the following convention: `{chr}:{start}-{end}`. Chromosome format -either `chrA` or plain `A` should follow the chromosome naming in the  provided GTF file.
+4. `-o $outprefix`: The output file prefix. If not provided by the user, the script utilizes the coordinates variable to set the output prefix.
 
 The **input file** is a 3-column tsv file containing the following information:
 
@@ -55,6 +58,8 @@ The **input file** is a 3-column tsv file containing the following information:
 
 An example input file is provided by the ggsashimi developers, [here](https://github.com/guigolab/ggsashimi/blob/master/examples/input_bams.tsv).
 
+Further specifications regarding the resulting plot, e.g. height or output format, can be modified by the user at lines 33 and 34. Run `~/ggsashimi.py --help` for the full list of options. 
+	
 </details>
 
 ## Immunoinformatics Tools
