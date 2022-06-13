@@ -33,7 +33,7 @@ sh GATK_WES.run.sh -c variant_calling_step_true/false \
                    -s somatic_true/false
 
 ```
-                   
+
 <details>
 <summary>Details on the arguments:</summary> 
   
@@ -96,6 +96,9 @@ sh GATK_WES.aux_src.VariantCalling.sh -d working/directory \
                                       -s somatic_true/false \
 ```
 
+⚠️ The script assumes a reference FASTA file, `{working directory}/aux/Homo_sapiens.GRCh38.dna.primary_assembly.fa` (Homo sapiens GRCh38, Ensembl v98). The path can be modified at line 25 of `GATK_WES.aux_src.VariantCalling.sh`.
+⚠️ The script assumes that the auxiliary af-gnomad file is under `{working directory}/GATKResources`, the directory created when running _Step 0: Download GATK Resources_ of the pipeline. The path can be modified at line 24 of `GATK_WES.aux_src.VariantCalling.sh`.
+
 ### 🪅 2. Variant Filtering
 
 Different variant filtering approaches are adopted for the germline and somatic samples.
@@ -109,8 +112,11 @@ Auxiliary script for this step: `GATK_WES.aux_src.VariantFiltering.sh`
 The script can be run on its own as:
 
 ```
-sh GATK_WES.aux_src.VariantCalling.sh -d working/directory \
+sh GATK_WES.aux_src.VariantFiltering.sh -d working/directory \
 	                                    -n "SampleID" \
                                       -g germline_true/false \
                                       -s somatic_true/false \
 ```
+
+⚠️ The script assumes a reference FASTA file, `{working directory}/aux/Homo_sapiens.GRCh38.dna.primary_assembly.fa` (Homo sapiens GRCh38, Ensembl v98). The path can be modified at line 27 of `GATK_WES.aux_src.VariantFiltering.sh`.
+⚠️ The script assumes that the auxiliary af-gnomad, HapMap, Mills, and AF-only-biallelic VCF files (see [above](0-dDownload-gatk-resources) are under `{working directory}/GATKResources`, the directory created when running _Step 0: Download GATK Resources_ of the pipeline. The paths can be modified at lines 26, 28, 29, and 30 of `GATK_WES.aux_src.VariantFiltering.sh`.
