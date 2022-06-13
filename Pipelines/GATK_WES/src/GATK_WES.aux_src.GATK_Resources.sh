@@ -32,7 +32,7 @@ wget https://storage.googleapis.com/gatk-best-practices/somatic-hg38/small_exac_
 if [ $ncbi == true ]
 then
 
-# AF Gnomad VCF
+# AF gnomAD VCF
 gunzip af-only-gnomad.hg38.vcf.gz
 sed 's/chr//g' af-only-gnomad.hg38.vcf > af-only-gnomad.hg38.NCBI.vcf
 bgzip -i af-only-gnomad.hg38.NCBI.vcf
