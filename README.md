@@ -23,9 +23,9 @@ Each cheatsheet follows the naming conventions below, to ensure better organizat
 The repository is split in sub-folders based on the "end-goal" of each cheatsheet, i.e. what type of analysis is carried out by each cheatsheet.
 
 ```
-.
 ├── Pipelines
-│   └── src
+│   └── GATK_WES
+│       └── src
 ├── Tools
 │   ├── aux
 │   └── src
