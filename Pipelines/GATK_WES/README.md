@@ -1,6 +1,6 @@
 # 🎎 GATK: WES Variant Calling Pipeline
 
-[GATK](https://gatk.broadinstitute.org/hc/en-us) is a collection of **best practices** documentation, tools and pipelines for Variant Discovery in High-Throughput Sequencing Data (WGS, WES, and RNAseq). The purpose of this cheatsheet is to gather together the GATK-proposed best practices for WES Variant Calling into a single pipeline. The cheatsheet is split into 3 parts; 1 initial/optional and 2 main steps.
+[GATK](https://gatk.broadinstitute.org/hc/en-us) provides the necessary tools and pipelines, and documents the **best practices** for Variant Discovery in High-Throughput Sequencing Data (WGS, WES, and RNAseq). The purpose of this cheatsheet is to gather together the GATK-proposed best practices for WES Variant Calling into a single pipeline. The cheatsheet is split into 3 parts; 1 initial/optional and 2 main steps.
 
 The cheatsheet was built and tested with the following module versions:
 
