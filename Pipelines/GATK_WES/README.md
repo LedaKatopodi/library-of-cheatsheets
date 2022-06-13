@@ -10,6 +10,9 @@ The cheatsheet was built and tested with the following module versions:
 * conda2/4.2.13
 * vep/98.3
 
+🍡 Best practices for germline variant calling were adopted, as described [here](https://gatk.broadinstitute.org/hc/en-us/articles/360035535932-Germline-short-variant-discovery-SNPs-Indels-).
+🍡 Best practices for somatic variant calling were adopted, as described [here]([https://gatk.broadinstitute.org/hc/en-us/articles/360035535932-Germline-short-variant-discovery-SNPs-Indels-](https://gatk.broadinstitute.org/hc/en-us/articles/360035894731-Somatic-short-variant-discovery-SNVs-Indels-).
+
 ## 👟 Running the Cheatsheet
 
 The cheatsheet is split into 3 parts:
