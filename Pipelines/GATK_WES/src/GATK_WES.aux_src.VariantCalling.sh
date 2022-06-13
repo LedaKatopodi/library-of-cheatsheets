@@ -47,7 +47,7 @@ file=${bwaDir}/${sample}".pos_sort.bam"
 ## == Mark Duplicates == ##
 echo -e "Mark duplicates\n"
 
-$gatk MarkDuplicates -I ${file} \
+gatk MarkDuplicates -I ${file} \
 -O ${varcallDir}/${sample}"_dupMarked.bam" \
 -M ${varcallDir}/${sample}"_dup.metrics" \
 --READ_NAME_REGEX null \
@@ -58,14 +58,14 @@ $gatk MarkDuplicates -I ${file} \
 ## == Base Recalibration == ##
 echo -e "Base Quality Scores Recalibration\n"
 
-$gatk BaseRecalibrator \
+gatk BaseRecalibrator \
 -I ${varcallDir}/${sample}"_dupMarked.bam" \
 -R $ref \
 --known-sites $gnomad \
 -O ${varcallDir}/${sample}".recal_data.table" \
 2>${varcallDir}/${sample}".BaseRecalibrator.log"
 
-$gatk ApplyBQSR \
+gatk ApplyBQSR \
 -R $ref \
 -I ${varcallDir}/${sample}"_dupMarked.bam" \
 --bqsr-recal-file ${varcallDir}/${sample}".recal_data.table" \
@@ -84,7 +84,7 @@ then
 	germDir=${varcallDir}/${sample}".Germline"
 	mkdir $germDir
 
-	$gatk HaplotypeCaller -R $ref \
+	gatk HaplotypeCaller -R $ref \
 	-I ${varcallDir}/${sample}".recal.bam" \
 	-O ${germDir}/${sample}".vcf.gz" \
 	-bamout ${germDir}/${sample}".g.bam" \
@@ -102,7 +102,7 @@ then
 	somaDir=${varcallDir}/${sample}".Somatic"
 	mkdir $somaDir
 
-	$gatk Mutect2 -R $ref \
+	gatk Mutect2 -R $ref \
 	-I ${varcallDir}/${sample}".recal.bam" \
 	--germline-resource $gnomad \
 	--dont-use-soft-clipped-bases \

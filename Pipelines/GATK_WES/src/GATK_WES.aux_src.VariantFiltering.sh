@@ -38,12 +38,12 @@ then
 
 	germDir=${varcallDir}/${sample}".Germline"
 
-	$gatk CNNScoreVariants \
+	gatk CNNScoreVariants \
 	-V ${germDir}/${sample}".vcf.gz" \
 	-R $ref \
 	-O ${germDir}/${sample}".annotated.vcf"
 
-	$gatk FilterVariantTranches \
+	gatk FilterVariantTranches \
 	-V ${germDir}/${sample}".annotated.vcf" \
 	--resource $hapmap \
 	--resource $mills \
@@ -61,18 +61,18 @@ elif [ $somatic == true ]
 then
 	somaDir=${varcallDir}/${sample}".Somatic"
 
-	$gatk GetPileupSummaries \
+	gatk GetPileupSummaries \
 	-I ${bwaDir}/${sample}".pos_sort.bam" \
 	-V $gnomadbial \
 	-L $gnomadbial \
 	-O ${somaDir}/${sample}".pileups.table"
 
-	$gatk CalculateContamination \
+	gatk CalculateContamination \
 	-I ${somaDir}/${sample}".pileups.table" \
 	-O ${somaDir}/${sample}".contamination.table"
 	### --tumor-segmentation ${somaDir}/${sample}".segments.tsv" \
 
-	$gatk FilterMutectCalls \
+	gatk FilterMutectCalls \
 	-R $ref \
 	-V ${somaDir}/${sample}".vcf" \
 	--contamination-table ${somaDir}/${sample}".contamination.table" \
@@ -84,7 +84,7 @@ then
 	annDir=$somaDir
 fi
 
-$gatk SelectVariants \
+gatk SelectVariants \
 -R $ref \
 -V ${annDir}/${sample}".filtered.vcf" \
 -O ${annDir}/${sample}".filtered_out.vcf" \
