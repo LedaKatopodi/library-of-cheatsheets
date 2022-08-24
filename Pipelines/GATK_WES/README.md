@@ -25,16 +25,16 @@ The cheatsheet is split into 3 parts:
 To run the whole cheatsheet:
 
 ```
-sh GATK_WES.run.sh -c variant_calling_step_true/false \
-                   -f variant_filtering_step_true/false \
-                   -r download_gatk_res_true/false \
-                   -d /working/directory \
-                   -m ucsc_to_ncbi_true/false \
+sh GATK_WES.run.sh -c variant_calling_step_true_or_false \
+                   -f variant_filtering_step_true_or_false \
+                   -r download_gatk_res_true_or_false \
+                   -d working/directory/ \
+                   -m ucsc_to_ncbi_true_or_false \
                    -n "Sample1" \
                    -1 sample1.R1.fastq.gz \
                    -2 sample1.R2.fastq.gz \
-                   -g germline_true/false \
-                   -s somatic_true/false
+                   -g germline_true_or_false \
+                   -s somatic_true_or_false
 
 ```
 
@@ -73,8 +73,8 @@ Auxiliary script for this step: `GATK_WES.aux_src.GATK_Resources.sh`
 The script can be run on its own as:
 
 ```
-sh GATK_WES.aux_src.GATK_Resources.sh -d working/directory \
-	                                    -m ucsc_to_ncbi_true/false
+sh GATK_WES.aux_src.GATK_Resources.sh -d working/directory/ \
+	                                    -m ucsc_to_ncbi_true_or_false
 ```
 
 ### 🪀 1. Variant Calling
@@ -92,12 +92,12 @@ Auxiliary script for this step: `GATK_WES.aux_src.VariantCalling.sh`
 The script can be run on its own as:
 
 ```
-sh GATK_WES.aux_src.VariantCalling.sh -d working/directory \
+sh GATK_WES.aux_src.VariantCalling.sh -d working/directory/ \
 	                                    -n "SampleID" \
                                       -1 sample1.R1.fastq.gz \
                                       -2 sample1.R2.fastq.gz \
-                                      -g germline_true/false \
-                                      -s somatic_true/false \
+                                      -g germline_true_or_false \
+                                      -s somatic_true_or_false \
 ```
 
 ⚠️ The script assumes a reference FASTA file, `{working directory}/aux/Homo_sapiens.GRCh38.dna.primary_assembly.fa` (Homo sapiens GRCh38, Ensembl v98). The path can be modified at line 25 of `GATK_WES.aux_src.VariantCalling.sh`.
@@ -116,10 +116,10 @@ Auxiliary script for this step: `GATK_WES.aux_src.VariantFiltering.sh`
 The script can be run on its own as:
 
 ```
-sh GATK_WES.aux_src.VariantFiltering.sh -d working/directory \
+sh GATK_WES.aux_src.VariantFiltering.sh -d working/directory/ \
 	                                    -n "SampleID" \
-                                      -g germline_true/false \
-                                      -s somatic_true/false \
+                                      -g germline_true_or_false \
+                                      -s somatic_true_or_false \
 ```
 
 ⚠️ The script assumes a reference FASTA file, `{working directory}/aux/Homo_sapiens.GRCh38.dna.primary_assembly.fa` (Homo sapiens GRCh38, Ensembl v98). The path can be modified at line 27 of `GATK_WES.aux_src.VariantFiltering.sh`.
